@@ -1,0 +1,90 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:float="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context=".LoginActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="60sp"
+        android:text="Explore"
+        android:id="@+id/textView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="36dp" />
+
+    <LinearLayout
+        android:id="@+id/credentials_holder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="200dp"
+        android:orientation="vertical">
+
+        <com.wrapp.floatlabelededittext.FloatLabeledEditText
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            float:fletPadding="5dp">
+
+            <EditText
+                android:id="@+id/login_usernameET"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:maxLines="1"
+                android:textSize="16sp"
+                android:hint="Username" />
+        </com.wrapp.floatlabelededittext.FloatLabeledEditText>
+
+        <com.wrapp.floatlabelededittext.FloatLabeledEditText
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            float:fletPadding="5dp">
+
+            <EditText
+                android:id="@+id/login_passwordET"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:maxLines="1"
+                android:inputType="textPassword"
+                android:textSize="16sp"
+                android:hint="Password" />
+        </com.wrapp.floatlabelededittext.FloatLabeledEditText>
+
+    </LinearLayout>
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Keep me Logged in"
+        android:id="@+id/login_keepInCB"
+        android:checked="false"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/credentials_holder"
+        android:layout_alignLeft="@+id/credentials_holder"
+        android:layout_alignStart="@+id/credentials_holder" />
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Log in"
+        android:id="@+id/login_btn"
+        android:layout_above="@+id/login_registerBtn"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Register"
+        android:id="@+id/login_registerBtn"
+        android:layout_marginBottom="23dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true" />
+
+</RelativeLayout>

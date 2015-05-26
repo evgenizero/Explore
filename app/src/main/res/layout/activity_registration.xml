@@ -1,0 +1,100 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:float="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegistrationActivity">
+
+    <android.support.v7.widget.Toolbar
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ff6d7fe2"
+        app:contentInsetEnd="0dp"
+        app:contentInsetStart="0dp"
+        ></android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:id="@+id/credentials_holder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Profile image"
+            android:layout_marginBottom="10dp"
+            android:id="@+id/textView2" />
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="@android:color/white"
+            android:id="@+id/imageView" />
+
+        <com.wrapp.floatlabelededittext.FloatLabeledEditText
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            float:fletPadding="5dp">
+
+            <EditText
+                android:id="@+id/registration_usernameET"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Username"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:textSize="16sp" />
+        </com.wrapp.floatlabelededittext.FloatLabeledEditText>
+
+        <com.wrapp.floatlabelededittext.FloatLabeledEditText
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            float:fletPadding="5dp">
+
+            <EditText
+                android:id="@+id/registration_passwordET"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:textSize="16sp" />
+        </com.wrapp.floatlabelededittext.FloatLabeledEditText>
+
+        <com.wrapp.floatlabelededittext.FloatLabeledEditText
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            float:fletPadding="5dp">
+
+            <EditText
+                android:id="@+id/registration_confirmtPassET"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Confirm password"
+                android:inputType="textPassword"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:textSize="16sp" />
+        </com.wrapp.floatlabelededittext.FloatLabeledEditText>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/registration_signUpBtn"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Sign up"
+        android:layout_below="@+id/credentials_holder"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="37dp" />
+
+</RelativeLayout>

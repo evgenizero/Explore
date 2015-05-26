@@ -1,0 +1,18 @@
+<resources>
+
+    <style name="MyNavigationDrawerTheme" parent="MaterialNavigationDrawerTheme">
+        <item name="colorPrimary">#00000000</item>
+        <item name="colorPrimaryDark">#558b2f</item>
+        <item name="colorAccent">#FFFFFF</item>
+    </style>
+
+    <!-- Mocked Account -->
+    <style name="MockedAccountDark" parent="MaterialNavigationDrawerTheme">
+        <item name="colorPrimary">#00000000</item>
+        <item name="colorPrimaryDark">#ff00cdc9</item>
+        <item name="colorAccent">#FFFFFF</item>
+        <item name="singleAccount">true</item><!-- Remove the change account button -->
+        <item name="learningPattern">false</item>
+    </style>
+
+</resources>
